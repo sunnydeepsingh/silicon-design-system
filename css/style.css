@@ -1,0 +1,122 @@
+:root {
+  --color--primary: #28293d;
+}
+
+body {
+  background-color: var(--color--primary);
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+/* Typography */
+h1 {
+  color: white;
+}
+
+button {
+  color: white;
+}
+
+.btn {
+  font-size: 14px;
+}
+
+/* icons */
+.icons {
+  width: 20px;
+  height: 18px;
+  padding-top: 2px;
+}
+/* Buttons*/
+.Buttons {
+  display: flex;
+
+  flex-direction: column;
+}
+.btn__blocks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 10px;
+  align-items: center;
+}
+.btn {
+  border-radius: 12px;
+  margin: 5px 0;
+}
+
+.btn--Wnormal {
+  height: 48px;
+  width: 100%;
+  max-width: 186px;
+}
+
+.btn--tall {
+  height: 224px;
+}
+
+.btn--long {
+  min-width: 380px;
+}
+.btn--slong {
+  min-width: 320px;
+  padding: 10px 0;
+  border-radius: 12px;
+}
+
+.btn--primary {
+  background: #515cfe;
+  border: 0;
+}
+.btn--primary:hover {
+  background: #6d76ff;
+  box-shadow: 2px 8px 20px #111;
+}
+
+.btn--primary:active {
+  background: #515dfe80;
+}
+
+.btn--secondary {
+  background: #3d3e50;
+  border: 0;
+}
+.btn--secondary:hover {
+  box-shadow: 2px 8px 20px #111;
+}
+
+.btn--secondary:active {
+  box-shadow: 2px 8px 20px rgba(17, 17, 17, 0.541);
+}
+.btn--backSame {
+  background: var(--color--primary);
+  border: 2px solid #666990;
+}
+.btn--backSame:hover {
+  border: 2px solid #8e8f92;
+}
+
+.btn--noBorder {
+  border: 0;
+}
+
+.btn--backSame:hover {
+  box-shadow: 2px 8px 20px #111;
+}
+
+.btn--noBorder:active {
+  background: #1718249d;
+}
+
+.btn--round {
+  width: 40px;
+  border-radius: 50%;
+  padding: 10px 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .Buttons {
+    flex-direction: row;
+  }
+}
