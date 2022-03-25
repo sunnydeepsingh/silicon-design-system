@@ -20,6 +20,10 @@ button {
 .btn {
   font-size: 14px;
 }
+.iError--lable {
+  color: #e4697d;
+  margin: 2px 0 0 15px;
+}
 
 /* icons */
 .icons {
@@ -119,4 +123,63 @@ button {
   .Buttons {
     flex-direction: row;
   }
+}
+
+/* input*/
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.input__block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.iBlock {
+  margin: 5px 15px;
+  height: 48px;
+  max-width: 350px;
+  overflow: hidden;
+  outline: 0;
+}
+
+.iLable {
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+.iImg {
+  width: 20px;
+  margin: 10px 3px 3px 3px;
+}
+.iBlock--tall {
+  height: 392px;
+  width: 88%;
+}
+
+.Imargin__icon {
+  margin: 10px 10px;
+}
+.iBlock--icon {
+  background: none;
+  border: none;
+  width: 270px;
+  outline: 0;
+}
+.input__icon {
+  margin-bottom: 10px;
+}
+.iError {
+  background: none;
+  border: 2px solid #e4697d;
+  border-radius: 15px;
+}
+
+.input_color {
+  background: none;
+  border: 2px solid #6d7198;
+  border-radius: 15px;
 }
