@@ -6,6 +6,7 @@ body {
   background-color: var(--color--primary);
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 14px;
+  color: white;
 }
 
 /* Typography */
@@ -162,6 +163,7 @@ button {
 
 .Imargin__icon {
   margin: 10px 10px;
+  max-width: 350px;
 }
 .iBlock--icon {
   background: none;
@@ -183,3 +185,105 @@ button {
   border: 2px solid #6d7198;
   border-radius: 15px;
 }
+
+.iblock--flex{
+  display: flex;
+  flex-direction: column;
+}
+.error__margin{
+  margin-top: 46px;}
+
+  .bigboy__margin{
+    margin-top: 30px;
+  }
+
+  /* Radios & Checkboxes */
+  .rc__main{
+    display: flex;
+    justify-content: space-between;
+  }
+  .rc__block{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rc__icon{
+    display: flex;
+    align-items: center;
+  }
+
+  .rc__margin{
+    margin-bottom: 30px;
+  }
+  .rc__IBmargin{
+    margin: 0 6px;
+  }
+
+  .radio__group{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* chips */ 
+  .chips{
+    cursor: pointer;
+  }
+  .chips__main{
+    display: flex;
+    align-items: center;
+    
+  }
+  .chips__block{
+    display: flex;
+    flex-direction: column;
+   
+  }
+  
+  
+  .chip2--margin{
+    margin-left: 60px;
+  }
+  .chips--margin{
+    margin-top: 20px;
+  }
+  .chips--border{
+    border: 2px solid white;
+    border-radius: 15px;
+    padding:  3px 5px;
+  }
+  
+  
+  .chips:hover{
+    background: #818188c4;
+  }
+  .chips:focus{
+    background: rgba(33, 137, 255, 0.801);
+  }
+ 
+  /* Cards */ 
+  .cards{
+    display: flex;
+    justify-content: space-between;
+  }
+  .card__main{
+    display: flex;
+    flex-direction: column;
+  }
+  .cards--primary{
+    background: #3E405B;
+    border-radius: 15px;
+  }
+  .cards--secondary{
+    background: #353850;
+    border-radius: 15px;
+  }
+  
+  .card--footer{
+    padding: 15px 5px;
+  }
+
+  .footer--margin{
+    position: relative;
+    top:10px;
+  }
+  
