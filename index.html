@@ -41,7 +41,7 @@
     <div class="inputs">
         <div class="input__block">
             <input class="iBlock input_color" type="text" placeholder="  look at this placeholder">
-            <span>
+            <span class="bigboy__margin">
                 <label class="iLable" for="largerInputs">I'm a big boy</label>
                 <input class="iBlock iBlock--tall input__block input_color" id="largerInputs" type="text" placeholder="  Used for larger Inputs">
             </span>
@@ -51,7 +51,7 @@
                 <img class="iImg" src="image/search.svg" alt="">
                 <input class="input__icon iBlock--icon" type="text" placeholder="Look an icon!">
             </span>
-            <span>
+            <span class="iblock--flex">
                 <label class="iLable" for="placeholder">With a label!</label>
                 <input class="iBlock input_color" id="placeholder" type="text" placeholder="  Placeholder">
             </span>
@@ -59,45 +59,139 @@
         </div>
         <div class="input__block" >
             <input class="iBlock input_color" type="text" placeholder="  I'm centered!">
-            <span>
+            <span class="iblock--flex error__margin">
                 <input id="error" class="iBlock iError " type="text">
                 <label for="error" class=" iError--lable" for="placeholder">Oh no here's an error message!</label>
             </span>
         </div>
     </div>
+
     <h1>Radios & Checkboxes</h1>
-    <div class="r&c">
-        <input class="input_color" type="checkbox">
-        <input class="input_color" id="withalable" type="checkbox">
-        <label for="withalable">With a lable</label>
-        <input class="input_color" type="checkbox">
-        <input class="input_color" id="alsowithalable" type="checkbox">
-        <label for="alsowithalable">Also With a lable</label>
-    </div>
-    <div>
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-    </div>
-    <div>
-        <p>This is a radio group</p>
-        <input id="switchfromme" type="checkbox">
-        <label for="switchfromme">Switch from me</label>
-        <input id="Tome" type="checkbox">
-        <input id="Orme" type="checkbox">
-        <label for="Orme">Or me!</label>
-        
+    <div class="rc__main">
+
+        <div class="rc__block">
+            <span class="rc__margin">
+                <input class="input_color" type="radio">
+            </span>
+            <span class="rc__icon rc__margin">
+                <input type="radio">
+                <img class="rc__IBmargin" src="image/house-door.svg" alt="">
+            </span>
+        </div>
+    
+        <div class="rc__block ">
+            <span class="rc__margin">
+                <input class="input_color" id="withalable" type="radio">
+                <label class="rc__IBmargin" for="withalable"> With a lable</label>
+            </span>
+            <span class="rc__icon rc__margin">
+                <input id="woithIcon" type="radio">
+                <img class="rc__IBmargin" src="image/house-door.svg" alt="">
+                <label class="rc__IBmargin" for="woithIcon"> With label and icon</label>
+            </span>
+        </div>
+        <div class="rc__block">
+            <span class="rc__margin">
+                <input class="input_color" type="checkbox">
+            </span>
+            <span class="rc__icon rc__margin">
+                <input type="checkbox">
+                <img class="rc__IBmargin" src="image/house-door.svg" alt="">
+            </span>
+        </div>
+    
+        <div class="rc__block">
+            <span class="rc__margin">
+                <input class="input_color" id="alsowithalable" type="checkbox">
+                <label class="rc__IBmargin" for="alsowithalable"> Also With a lable</label>
+            </span>
+            <span class="rc__icon rc__margin">
+                <input id="woithIcon2" type="checkbox">
+                <img class="rc__IBmargin" src="image/house-door.svg" alt="">
+                <label class="rc__IBmargin" for="woithIcon2"> With label and icon</label>
+            </span>
+    
+        </div>
     </div>
 
-    <h1>Chips</h1>
-    <div>
-        <span>Hi I'm called a chip!</span>
-        <span>I use a bigger text size!</span>
+    <H2>This is a radio group</H2>
+    <div class="radio__group">
+        <span>
+            <input id="switchfromme" name="radioGroup" type="radio">
+            <label for="switchfromme">Switch from me</label>
+        </span>
+        <span>
+            <input id="Tome" name="radioGroup" type="radio">
+            <label for="Tome">To me</label>
+        </span>
+        <span>
+            <input id="Orme" name="radioGroup" type="radio">
+            <label for="Orme">Or me!</label>
+        </span>
+
     </div>
-    <h2>This is a chip group</h2>
-    <span>Imo</span>
-    <span>Ludi</span>
-    <span>Ndaru</span>
+        
+    <h1>Chips</h1>
+    <div class="chips__main">
+        <div class="chips__block">
+            <span class="chips chips--border chips--margin">Hi I'm called a chip!</span>
+            <span class="chips chips--border chips--margin">I use a bigger text size!</span>
+        </div>
+        <div class="chips__block chip2--margin">
+            <h2>This is a chip group</h2>
+            <div>
+                <span class="chips chips--border">
+                    <img src="image/tick.svg" alt=""> Imo</span>
+                <span class="chips chips--border">  
+                    <img src="image/tick.svg" alt="">Ludi</span>
+                <span class="chips chips--border">
+                    <img src="image/tick.svg" alt=""> Ndaru</span>
+
+            </div>
+        </div>
+
+    </div>
+
+    <h1>Cards</h1>
+    <div class="cards">
+        <div class="card__main">
+            <span class="cards--primary">
+                <h3>Hi I'm a card!</h3>
+                <p>I also have a body text!</p>
+            </span>
+            <div class="card2">
+                <img class="cards--primary" src="image/Image Frame.svg" alt="">
+                <div class="cards--primary footer--margin">
+                    <h3 class=" card--footer">oh look an image!</h3>
+                </div>
+            </div>
+        </div>
+        <div class="card__main">
+            <span class="cards--secondary">
+                <img src="image/plants.svg" alt="">
+                <div class="cards--primary"> 
+                    <h3>Wow a button!</h3>
+                    <button class="btn btn--primary btn--Wnormal">I'm a button!</button>
+                </div>
+            
+            </span> 
+        </div>
+        <div class="card__main">
+            <span class="cards--secondary">
+                <img src="image/card image 3.svg" alt="">
+                <div class="cards--primary">
+                    <h3>This card has everything</h3>
+                    <p>I have an image, tile, body and even a button!</p>
+                    <button class="btn btn--primary btn--Wnormal">I'm a button!</button>
+                </div>
+            </span>
+        </div>
+
+    </div>
+        
+ 
+        
+  
+
 </body>
 </html>
