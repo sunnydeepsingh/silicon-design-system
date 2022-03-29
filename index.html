@@ -133,7 +133,7 @@
         
     <h1>Chips</h1>
     <div class="chips__main">
-        <div class="chips__block">
+        <div class=" chips__block">
             <span class="chips chips--border chips--margin">Hi I'm called a chip!</span>
             <span class="chips chips--border chips--margin">I use a bigger text size!</span>
         </div>
@@ -155,43 +155,208 @@
     <h1>Cards</h1>
     <div class="cards">
         <div class="card__main">
-            <span class="cards--primary">
-                <h3>Hi I'm a card!</h3>
-                <p>I also have a body text!</p>
+            <span class="cards--primary card1">
+                <h3 class="card--text">Hi I'm a card!</h3>
+                <p class="card--text">I also have a body text!</p>
             </span>
             <div class="card2">
-                <img class="cards--primary" src="image/Image Frame.svg" alt="">
+                
                 <div class="cards--primary footer--margin">
-                    <h3 class=" card--footer">oh look an image!</h3>
+                    <h3 class=" card--footer card--text">oh look an image!</h3>
                 </div>
             </div>
         </div>
         <div class="card__main">
-            <span class="cards--secondary">
-                <img src="image/plants.svg" alt="">
-                <div class="cards--primary"> 
-                    <h3>Wow a button!</h3>
+            <span class="cards--secondary card3">
+                <img class="img--card" src="image/plants.svg" alt="">
+                <div class="cards--primary text-primary"> 
+                    <h3 class="card--text">Wow a button!</h3>
                     <button class="btn btn--primary btn--Wnormal">I'm a button!</button>
                 </div>
             
             </span> 
         </div>
         <div class="card__main">
-            <span class="cards--secondary">
-                <img src="image/card image 3.svg" alt="">
-                <div class="cards--primary">
-                    <h3>This card has everything</h3>
-                    <p>I have an image, tile, body and even a button!</p>
+            <span class="cards--secondary card4">
+                <img class="img--card" src="image/card image 3.svg" alt="">
+                <div class="cards--primary text-primary">
+                    <h3 class="card--text">This card has everything</h3>
+                    <p class="card--text">I have an image, tile, body and even a button!</p>
                     <button class="btn btn--primary btn--Wnormal">I'm a button!</button>
                 </div>
             </span>
         </div>
 
     </div>
-        
- 
-        
-  
+    
+    <h1>Disclosures</h1>
+    <div class="disclosures">
 
+        <div>
+            <section class="collapsible collapsible--expanded dCard bCard1" >
+                <div class="collapsible__head">
+                    <p>What is a disclosure?</p> 
+                    <img class="collapsible__chevron" src="image/chevron.svg" alt="">
+                </div>
+                <div class="collapsible__content collapsible--expanded">
+                    <p>A simple, accessible foundation for building custom UIs that show and hide content, like togglable accordion panels.</p>
+                </div>
+            </section>
+            <section class="collapsible dCard" >
+                <div class="collapsible__head">
+                    <p>I'm closed!</p> 
+                    <img class="collapsible__chevron" src="image/chevron.svg" alt="">
+                </div>
+                <div class="collapsible__content collapsible--expanded">
+                    <p>A simple, accessible foundation for building custom UIs that show and hide content, like togglable accordion panels.</p>
+                </div>
+            </section>
+        </div>
+        <div class=" dCard--margin">
+            <section class="collapsible collapsible--expanded bCard1 dCard" >
+                <div class="collapsible__head">
+                    <p class="">You can also make accordians!</p> 
+                    <img class="collapsible__chevron" src="image/chevron.svg" alt="">
+                </div>
+                <div class="collapsible__content collapsible--expanded">
+                    <p>Make sure you use auto layouts to get that cool expanding effect!</p>
+                </div>
+            </section>
+            <section class="collapsible collapsible--expanded dCard" >
+                <div class="collapsible__head">
+                    <p>I’m part of the accordian</p> 
+                    <img class="collapsible__chevron" src="image/chevron.svg" alt="">
+                </div>
+                <div class="collapsible__content collapsible--expanded">
+                    <p>An accordion is a vertically stacked group of collapsible sections.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <h1>Dropdowns</h1>
+    <div class="dropdown__main">
+        <section class="collapsible dropCard" >
+            <div class="collapsible__head">
+                <p class="">I'm a dropdown!</p> 
+                <img class="collapsible__chevron" src="image/chevron.svg" alt="">
+            </div>
+            <div class="collapsible__content collapsible--expanded">
+                <ul>
+                    <li>Level 1</li>
+                    <li>Level 2</li>
+                    <li>Level 3</li>
+                </ul>
+            </div>
+        </section>
+        <section class="collapsible dropCard" >
+            <div class="collapsible__head">
+                <p class="">I can go from only 1 item</p> 
+                <img class="collapsible__chevron" src="image/chevron.svg" alt="">
+            </div>
+            <div class="collapsible__content collapsible--expanded">
+                <p>Lable 1</p>
+            </div>
+        </section>
+        <section class="collapsible dropCard" >
+            <div class="collapsible__head">
+                <p class="">To having 12 items!</p> 
+                <img class="collapsible__chevron" src="image/chevron.svg" alt="">
+            </div>
+            <div class="collapsible__content collapsible--expanded">
+                <ul>
+                    <li>Level 1</li>
+                    <li>Level 2</li>
+                    <li>Level 3</li>
+                    <li>Lavel 4</li>
+                    <li>Lavel 5</li>
+                    <li>Lavel 6</li>
+                    <li>Lavel 7</li>
+                    <li>Lavel 8</li>
+                    <li>Lavel 9</li>
+                    <li>Lavel 10</li>
+                    <li>Lavel 11</li>
+                    <li>Lavel 12</li>
+                </ul>
+            </div>
+        </section>    
+    </div>         
+       
+        <h3>My values can also change!</h3>
+        <section class="collapsible dropCard" >
+            <div class="collapsible__head">
+                <p class="">I can go from only 1 item</p> 
+                <img class="collapsible__chevron" src="image/chevron.svg" alt="">
+            </div>
+            <div class="collapsible__content collapsible--expanded">
+                <p>Lable 1</p>
+                <p>Lable 2</p>
+                <p>Lable 3</p>
+                <p>Lable 4</p>
+            </div>
+        </section>
+    
+    <h1>File Inputs</h1>
+    <div class="FileInput">
+
+        <div class="file__block">
+            <section class="file__card">
+                <img src="image/Upload Illustration.svg" alt="">
+                <p>You can click me to upload files!</p>
+                <p>secondary message</p>
+            </section>
+            <section class="file__card">
+                <img src="image/Upload Illustration.svg" alt="">
+                <p>You can click me to upload files!</p>
+                <p>secondary message</p>
+                <img src="image/Frame 47193.svg" alt="">
+                <p>you can also paste a Google Drive link!</p>
+                <div>
+                    <input class="iBlock input_color" type="text" placeholder="  Google drive link">
+                    <button class="btn btn--primary btn--FWnormal"> <img class="icons" src="image/save.svg" alt=""></button>
+                </div>
+            </section>
+        </div>
+        <div class="file__block file2">
+            <section class="file__card">
+                <img src="image/Upload Illustration.svg" alt="">
+                <p>I'm a mobile-friendly version!</p>
+                <p>secondary message</p>
+            </section>
+            <section class="file__card">
+                <img src="image/Upload Illustration.svg" alt="">
+                <p>I'm a mobile-friendly version!</p>
+                <p>secondary message</p>
+                <img src="image/Frame 47193.svg" alt="">
+                <p>you can also paste a Google Drive link!</p>
+                <div>
+                    <input class="iBlock input_color" type="text" placeholder="  Google drive link">
+                    <button class="btn btn--primary btn--FWnormal"> <img class="icons" src="image/save.svg" alt=""></button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <h1>Modals</h1>
+    <div>
+        <div>
+            <button class="btn btn--primary btn--Wnormal">Basic modal</button>
+            <button class="btn btn--primary btn--Wnormal">With a close button</button>
+            <button class="btn btn--primary btn--Wnormal">With an image</button>
+            <button class="btn btn--primary btn--Wnormal">With 2 buttons</button>
+            <button class="btn btn--primary btn--Wnormal">Wide by</button>
+        </div>
+    </div>
+    <div>
+        <div>
+            
+            <button class="btn btn--primary btn--Wnormal">Mobile modals</button>
+        </div>
+    </div>
+
+
+
+      
+    <script src="js/main.js"></script>
 </body>
 </html>
