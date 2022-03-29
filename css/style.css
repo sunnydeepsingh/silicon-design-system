@@ -186,104 +186,222 @@ button {
   border-radius: 15px;
 }
 
-.iblock--flex{
+.iblock--flex {
   display: flex;
   flex-direction: column;
 }
-.error__margin{
-  margin-top: 46px;}
+.error__margin {
+  margin-top: 46px;
+}
 
-  .bigboy__margin{
-    margin-top: 30px;
-  }
+.bigboy__margin {
+  margin-top: 30px;
+}
 
-  /* Radios & Checkboxes */
-  .rc__main{
+/* Radios & Checkboxes */
+.rc__main {
+  display: flex;
+  justify-content: space-between;
+}
+.rc__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.rc__icon {
+  display: flex;
+  align-items: center;
+}
+
+.rc__margin {
+  margin-bottom: 30px;
+}
+.rc__IBmargin {
+  margin: 0 6px;
+}
+
+.radio__group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* chips */
+.chips {
+  cursor: pointer;
+}
+.chips__main {
+  display: flex;
+  align-items: center;
+}
+.chips__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.chip2--margin {
+  margin-left: 60px;
+}
+.chips--margin {
+  margin-top: 20px;
+}
+.chips--border {
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 3px 5px;
+}
+
+.chips:hover {
+  background: #818188c4;
+}
+.chips:focus {
+  background: rgba(33, 137, 255, 0.801);
+}
+
+/* Cards */
+
+.card__main {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 15px;
+}
+.cards--primary {
+  background: #3e405b;
+  border-radius: 15px;
+}
+.cards--secondary {
+  background: #353850;
+  border-radius: 15px;
+}
+
+.card--footer {
+  margin-top: 200px;
+  padding: 15px 5px;
+}
+
+.card2 {
+  margin-top: 15px;
+  background: url(../image/Image\ Frame.svg);
+  background-repeat: no-repeat;
+  width: 250px;
+}
+.card1 {
+  max-width: 250px;
+}
+.card3 {
+  margin-bottom: 10px;
+  max-width: 250px;
+}
+.card4 {
+  max-width: 250px;
+}
+
+.img--card {
+  width: 100%;
+}
+
+.card--text {
+  margin-left: 10px;
+}
+.text-primary {
+  padding: 8px 10px;
+}
+@media screen and (min-width: 1024px) {
+  .cards {
     display: flex;
     justify-content: space-between;
   }
-  .rc__block{
-    display: flex;
-    flex-direction: column;
+  .card2 {
+    width: 289px;
+  }
+  .card3 {
+    max-width: 495px;
   }
 
-  .rc__icon{
-    display: flex;
-    align-items: center;
+  .card4 {
+    max-width: 392px;
   }
+}
 
-  .rc__margin{
-    margin-bottom: 30px;
-  }
-  .rc__IBmargin{
-    margin: 0 6px;
-  }
+/*disclosures */
 
-  .radio__group{
-    display: flex;
-    flex-direction: column;
-  }
+.disclosures {
+  display: flex;
+}
 
-  /* chips */ 
-  .chips{
-    cursor: pointer;
-  }
-  .chips__main{
-    display: flex;
-    align-items: center;
-    
-  }
-  .chips__block{
-    display: flex;
-    flex-direction: column;
-   
-  }
-  
-  
-  .chip2--margin{
-    margin-left: 60px;
-  }
-  .chips--margin{
-    margin-top: 20px;
-  }
-  .chips--border{
-    border: 2px solid white;
-    border-radius: 15px;
-    padding:  3px 5px;
-  }
-  
-  
-  .chips:hover{
-    background: #818188c4;
-  }
-  .chips:focus{
-    background: rgba(33, 137, 255, 0.801);
-  }
- 
-  /* Cards */ 
-  .cards{
-    display: flex;
-    justify-content: space-between;
-  }
-  .card__main{
-    display: flex;
-    flex-direction: column;
-  }
-  .cards--primary{
-    background: #3E405B;
-    border-radius: 15px;
-  }
-  .cards--secondary{
-    background: #353850;
-    border-radius: 15px;
-  }
-  
-  .card--footer{
-    padding: 15px 5px;
-  }
+.dCard {
+  width: 490px;
+  border: 4px solid #3d3e50;
+  border-radius: 12px;
+  padding: 5px 0 5px 15px;
+}
 
-  .footer--margin{
-    position: relative;
-    top:10px;
-  }
-  
+.dCard--margin {
+  margin-left: 20px;
+}
+.collapsible__head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__head:hover {
+  background: #353850;
+  border-radius: 12px;
+}
+
+.collapsible__chevron {
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+  padding-right: 5px;
+}
+
+.collapsible__content {
+  display: none;
+}
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+  display: block;
+}
+
+.bCard1 {
+  margin-bottom: 50px;
+}
+
+/* Dropdowns*/
+
+.dropCard {
+  width: 256px;
+  border-radius: 12px;
+  padding: 5px 0 5px 15px;
+}
+
+.dropdown__main {
+  display: flex;
+}
+
+/* File Input */
+
+.FileInput {
+  display: flex;
+}
+
+.file2 {
+  margin-left: 20px;
+}
+
+.file__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px dotted #353850;
+  margin-bottom: 15px;
+  border-radius: 20px;
+}
+
+.btn--FWnormal {
+  height: 48px;
+  width: 60px;
+}
