@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=PT+Serif:ital@1&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Silicon Design System</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -40,27 +40,27 @@
     <h1>Text Inputs</h1>
     <div class="inputs">
         <div class="input__block">
-            <input class="iBlock input_color" type="text" placeholder="  look at this placeholder">
+            <input class="iBlock input_color input--hover Iwidth_all" type="text" placeholder="  look at this placeholder">
             <span class="bigboy__margin">
                 <label class="iLable" for="largerInputs">I'm a big boy</label>
-                <input class="iBlock iBlock--tall input__block input_color" id="largerInputs" type="text" placeholder="  Used for larger Inputs">
+                <textarea class="iBlock iBlock--tall input__block input_color input--hover Iwidth_all" id="largerInputs" cols="40" rows="10" placeholder="Used for larger inputs"></textarea>
             </span>
         </div>
         <div class="input__block">
-            <span class="input_color Imargin__icon ">
+            <span class="input_color Imargin__icon Iwidth_all ">
                 <img class="iImg" src="image/search.svg" alt="">
-                <input class="input__icon iBlock--icon" type="text" placeholder="Look an icon!">
+                <input class="input__icon iBlock--icon input--hover " type="text" placeholder="Look an icon!">
             </span>
             <span class="iblock--flex">
                 <label class="iLable" for="placeholder">With a label!</label>
-                <input class="iBlock input_color" id="placeholder" type="text" placeholder="  Placeholder">
+                <input class="iBlock input_color input--hover Iwidth_all" id="placeholder" type="text" placeholder="  Placeholder">
             </span>
             
         </div>
         <div class="input__block" >
-            <input class="iBlock input_color" type="text" placeholder="  I'm centered!">
-            <span class="iblock--flex error__margin">
-                <input id="error" class="iBlock iError " type="text">
+            <input class="iBlock input_color input--hover Iwidth_all" type="text" placeholder="  I'm centered!">
+            <span class="iblock--flex error__margin input--hover">
+                <input id="error" class="iBlock iError Iwidth_all" type="text">
                 <label for="error" class=" iError--lable" for="placeholder">Oh no here's an error message!</label>
             </span>
         </div>
@@ -69,8 +69,8 @@
     <h1>Radios & Checkboxes</h1>
     <div class="rc__main">
 
-        <div class="rc__block">
-            <span class="rc__margin">
+        <div class="rc__block ">
+            <span class="rc__margin ">
                 <input class="input_color" type="radio">
             </span>
             <span class="rc__icon rc__margin">
@@ -134,18 +134,18 @@
     <h1>Chips</h1>
     <div class="chips__main">
         <div class=" chips__block">
-            <span class="chips chips--border chips--margin">Hi I'm called a chip!</span>
-            <span class="chips chips--border chips--margin">I use a bigger text size!</span>
+            <button class="chips chips--border chips--margin">Hi I'm called a chip!</button>
+            <button class="chips chips--border chips--margin">I use a bigger text size!</button>
         </div>
         <div class="chips__block chip2--margin">
             <h2>This is a chip group</h2>
             <div>
-                <span class="chips chips--border">
-                    <img src="image/tick.svg" alt=""> Imo</span>
-                <span class="chips chips--border">  
-                    <img src="image/tick.svg" alt="">Ludi</span>
-                <span class="chips chips--border">
-                    <img src="image/tick.svg" alt=""> Ndaru</span>
+                <button class="chips chips--border">
+                    <img src="image/tick.svg" alt=""> Imo</button>
+                <button class="chips chips--border">  
+                    <img src="image/tick.svg" alt="">Ludi</button>
+                <button class="chips chips--border">
+                    <img src="image/tick.svg" alt=""> Ndaru</button>
 
             </div>
         </div>
@@ -242,7 +242,7 @@
                 <img class="collapsible__chevron" src="image/chevron.svg" alt="">
             </div>
             <div class="collapsible__content collapsible--expanded">
-                <ul>
+                <ul class="list-s">
                     <li>Level 1</li>
                     <li>Level 2</li>
                     <li>Level 3</li>
@@ -264,7 +264,7 @@
                 <img class="collapsible__chevron" src="image/chevron.svg" alt="">
             </div>
             <div class="collapsible__content collapsible--expanded">
-                <ul>
+                <ul class="list-s">
                     <li>Level 1</li>
                     <li>Level 2</li>
                     <li>Level 3</li>
@@ -338,24 +338,153 @@
     </div>
 
     <h1>Modals</h1>
-    <div>
-        <div>
-            <button class="btn btn--primary btn--Wnormal">Basic modal</button>
-            <button class="btn btn--primary btn--Wnormal">With a close button</button>
-            <button class="btn btn--primary btn--Wnormal">With an image</button>
-            <button class="btn btn--primary btn--Wnormal">With 2 buttons</button>
-            <button class="btn btn--primary btn--Wnormal">Wide by</button>
-        </div>
+    <div >
+        <button class="btn btn--primary btn--Wnormal">Basic modal</button>
+        <button class="btn btn--primary btn--Wnormal">With a close button</button>
+        <button class="btn btn--primary btn--Wnormal">With an image</button>
+        <button class="btn btn--primary btn--Wnormal">With 2 buttons</button>
+        <button class="btn btn--primary btn--Wnormal">Wide by</button>
+        <button class="btn btn--primary btn--Wnormal">Mobile modals</button>
     </div>
-    <div>
-        <div>
+    
+    <h1>Tabs</h1>
+    
+    <section class="container">
+        
+        
+        <section>
+          <div class="tabs-container">
+            <div class="tabs">
+              <input type="radio" id="radio-1" name="tabs" checked />
+              <label class="tab" for="radio-1">I'm a tab!</label>
+              <input type="radio" id="radio-2" name="tabs" />
+              <label class="tab" for="radio-2">Now switch to me!!</label>
+              <span class="glider"></span>
+            </div>
+          </div>
+  
+          <div class="tabs-container">
+            <div class="tabs tabs--with-icon">
+              <input type="radio" id="radio-i1" name="tabs" checked />
+                <label class="tab" for="radio-i1">
+                  <span>
+                    <img class="icon--tabs"
+                    src="image/Home.svg"
+                    alt="house icon" />
+                    </span>I can also have icons</label>
+              <input type="radio" id="radio-i2" name="tabs" />
+              <label class="tab" for="radio-i2">
+                  <span>
+                    <img class="icon--tabs"
+                    src="image/door-closed.svg"
+                    alt="house door icon" />
+                </span>Wow a door</label
+              >
+              <input type="radio" id="radio-i3" name="tabs" />
+              <label class="tab" for="radio-i3"
+                ><span>
+                    <img class="icon--tabs"
+                    src="image/cart4.svg"
+                    alt="shopping cart icon" />
+                    </span>Now a shopping cart
+               </label>
+              <span class="glider"></span>
+            </div>
+          </div>
+  
+          <div class="tabs-container">
+            <div class="tabs tabs--t4">
+              <input type="radio" id="radio-t4-1" name="tabs" checked />
+              <label class="tab" for="radio-t4-1">Tab</label>
+              <input type="radio" id="radio-t4-2" name="tabs" />
+              <label class="tab" for="radio-t4-2">Tab</label>
+              <input type="radio" id="radio-t4-3" name="tabs" />
+              <label class="tab" for="radio-t4-3">Tab</label>
+              <input type="radio" id="radio-t4-4" name="tabs" />
+              <label class="tab" for="radio-t4-4">Tab</label>
+              <span class="glider"></span>
+            </div>
+          </div>
+  
+          <div class="tabs-container">
+            <div class="tabs tabs--t5">
+              <input type="radio" id="radio-t5-1" name="tabs" checked />
+              <label class="tab" for="radio-t5-1">Tab</label>
+              <input type="radio" id="radio-t5-2" name="tabs" />
+              <label class="tab" for="radio-t5-2">Tab</label>
+              <input type="radio" id="radio-t5-3" name="tabs" />
+              <label class="tab" for="radio-t5-3">Tab</label>
+              <input type="radio" id="radio-t5-4" name="tabs" />
+              <label class="tab" for="radio-t5-4">Tab</label>
+              <input type="radio" id="radio-t5-5" name="tabs" />
+              <label class="tab" for="radio-t5-5">Tab</label>
+              <span class="glider"></span>
+            </div>
+          </div>
+  
+          <div class="tabs-container">
+            <div class="tabs tabs--t6">
+              <input type="radio" id="radio-t6-1" name="tabs" checked />
+              <label class="tab" for="radio-t6-1">Tab</label>
+              <input type="radio" id="radio-t6-2" name="tabs" />
+              <label class="tab" for="radio-t6-2">Tab</label>
+              <input type="radio" id="radio-t6-3" name="tabs" />
+              <label class="tab" for="radio-t6-3">Tab</label>
+              <input type="radio" id="radio-t6-4" name="tabs" />
+              <label class="tab" for="radio-t6-4">Tab</label>
+              <input type="radio" id="radio-t6-5" name="tabs" />
+              <label class="tab" for="radio-t6-5">Tab</label>
+              <input type="radio" id="radio-t6-6" name="tabs" />
+              <label class="tab" for="radio-t6-6">Tab</label>
+              <span class="glider"></span>
+            </div>
+          </div>
+        </section>
+          
+        <section class="section--side">
+
+            <h2>Works great for mobile too!</h3>
             
-            <button class="btn btn--primary btn--Wnormal">Mobile modals</button>
-        </div>
-    </div>
-
-
-
+              <div class="tabs-container tab--side">
+                <div class="tabs tabs--icon-only">
+                  <input type="radio" id="radio-io1" name="tabs" checked />
+                  <label class="tab" for="radio-io1"
+                    ><span
+                      ><img
+                        class="rc--icon"
+                        src="image/Home.svg"
+                        alt="house icon" /></span
+                  ></label>
+                  <input type="radio" id="radio-io2" name="tabs" />
+                  <label class="tab" for="radio-io2"
+                    ><span
+                      ><img
+                        class="icon--tabs"
+                        src="image/search--w.svg"
+                        alt="search icon" /></span
+                  ></label>
+                  <input type="radio" id="radio-io3" name="tabs" />
+                  <label class="tab" for="radio-io3"
+                    ><span
+                      ><img
+                        class="icon--tabs"
+                        src="image/heart.svg"
+                        alt="heart icon" /></span
+                  ></label>
+                  <input type="radio" id="radio-io4" name="tabs" />
+                  <label class="tab" for="radio-io4"
+                    ><span
+                      ><img
+                        class="icon--tabs"
+                        src="image/ProfileAccount.svg"
+                        alt="User profile icon" /></span
+                  ></label>
+                  <span class="glider"></span>
+                </div>
+              </div>
+        </section>   
+        
+      </section>
       
     <script src="js/main.js"></script>
 </body>
