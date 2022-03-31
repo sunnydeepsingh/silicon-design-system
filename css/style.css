@@ -236,13 +236,23 @@ textarea {
 }
 
 .Iwidth_all {
-  width: 300px;
+  width: 392px;
 }
 
+.Iheight_all{
+  height:40px;
+}
 .inplut--flex{
   display: flex;
   padding: 10px 0 0 5px;
   gap: 5px;
+  height:40px;
+ 
+}
+.input--bottom{
+  margin: 5px 10px;
+  max-width: 350px;
+ 
 }
 
 @media screen and (min-width: 1024px) {
@@ -689,6 +699,17 @@ input[type="checkbox"]:checked::after {
   border-radius: 20px;
 }
 
+.file-W{
+  width:598px;
+}
+.file2{
+  width:308px;
+
+}
+.small-f{
+  width:305px;
+}
+
 .file__card:hover {
   border-color: #3eebbe;
 }
@@ -696,10 +717,16 @@ input[type="checkbox"]:checked::after {
   height: 48px;
   width: 60px;
 }
+
+.D--small{
+  display: flex;
+  width:280px;
+}
 @media screen and (min-width: 1024px) {
   .FileInput {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 300px;
     margin: 5px 100px;
   }
   .file--input {
