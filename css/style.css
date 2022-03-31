@@ -1,5 +1,7 @@
 :root {
   --color--primary: #28293d;
+  --color--secondary:linear-gradient(180deg, #5561FF 0%, #3643FC 100%, #3643FC 100%);
+  --color--btndark: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -72,7 +74,7 @@ button {
 }
 
 .btn--primary {
-  background: #515cfe;
+  background: var(--color--secondary);
   border: 0;
 }
 .btn--primary:hover {
@@ -85,7 +87,7 @@ button {
 }
 
 .btn--secondary {
-  background: #3d3e50;
+  background: var(--color--btndark);
   border: 0;
 }
 .btn--secondary:hover {
