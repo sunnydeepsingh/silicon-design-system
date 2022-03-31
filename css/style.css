@@ -693,7 +693,7 @@ input[type="checkbox"]:checked::after {
 .file__card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   border: 5px dotted #353850;
   margin-bottom: 15px;
   border-radius: 20px;
@@ -732,6 +732,12 @@ input[type="checkbox"]:checked::after {
   .file--input {
     width: 250px;
   }
+  .file__card {
+    
+    align-items: center;
+    
+  }
+  
 }
 
 /* tabs */
