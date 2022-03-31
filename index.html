@@ -194,7 +194,7 @@
 
         <div>
             <section class="collapsible collapsible--expanded dCard bCard1" >
-                <div class="collapsible__head">
+                <div class="collapsible__head Cc--head">
                     <p>What is a disclosure?</p> 
                     <img class="collapsible__chevron" src="image/chevron.svg" alt="">
                 </div>
@@ -312,7 +312,7 @@
                 <img src="image/Frame 47193.svg" alt="">
                 <p>you can also paste a Google Drive link!</p>
                 <div>
-                    <input class="iBlock input_color" type="text" placeholder="  Google drive link">
+                    <input class="iBlock input_color file--input" type="text" placeholder="  Google drive link">
                     <button class="btn btn--primary btn--FWnormal"> <img class="icons" src="image/save.svg" alt=""></button>
                 </div>
             </section>
@@ -330,7 +330,7 @@
                 <img src="image/Frame 47193.svg" alt="">
                 <p>you can also paste a Google Drive link!</p>
                 <div>
-                    <input class="iBlock input_color" type="text" placeholder="  Google drive link">
+                    <input class="iBlock input_color file--input" type="text" placeholder="  Google drive link">
                     <button class="btn btn--primary btn--FWnormal"> <img class="icons" src="image/save.svg" alt=""></button>
                 </div>
             </section>
@@ -338,13 +338,87 @@
     </div>
 
     <h1>Modals</h1>
-    <div >
-        <button class="btn btn--primary btn--Wnormal">Basic modal</button>
-        <button class="btn btn--primary btn--Wnormal">With a close button</button>
-        <button class="btn btn--primary btn--Wnormal">With an image</button>
-        <button class="btn btn--primary btn--Wnormal">With 2 buttons</button>
-        <button class="btn btn--primary btn--Wnormal">Wide by</button>
-        <button class="btn btn--primary btn--Wnormal">Mobile modals</button>
+    <div class="modal__main" >
+        <div class="modals__blocks">
+            <div>
+                <button class="btn btn--primary btn--Wnormal btn--modal">Basic modal</button>
+            </div>
+            <div class="modal__box">
+                <img class="modal--i" src="image/tick 2.svg" alt="">
+                <h3>Hi I'm a modal </h3>
+                <p class="modal--p">  I have a basic icon, heading, and body text. I have no buttons or a close button so press outside the modal to close! </p> 
+            </div>
+        </div>
+        <div class="modals__blocks">
+            <div>
+                <button class="btn btn--primary btn--Wnormal btn--modal">With a close button</button>
+            </div>
+            <div class="modal__box">
+                <img class="close-margin" src="image/close.svg" alt="">
+                <img class="modal--i" src="image/tick 2.svg" alt="">
+                <h3>Wow a button! </h3>
+                <p class="modal--p"> This modal has a basic button to initiate an action within a modal. </p> 
+                <button class="btn btn--primary btn--Wnormal ">You can press me!</button>
+            </div>
+        </div>
+        <div class="modals__blocks">
+            <div>
+                <button class="btn btn--primary btn--Wnormal btn--modal">With an image</button>
+            </div>
+            <div class="modal__box">
+                <img class="close-margin" src="image/close.svg" alt="">
+                <img class="modal--i" src="image/1.svg" alt="">
+                <h3>I have an image! </h3>
+                <p class="modal--p">Modals can also have images to illustrate your point more clearly. </p> 
+            </div>
+        </div>
+        <div class="modals__blocks">
+            <div>
+                <button class="btn btn--primary btn--Wnormal btn--modal">With 2 buttons</button>
+            </div>
+            <div class="modal__box">
+                <img class="close-margin" src="image/close.svg" alt="">
+                <img class="modal--i" src="image/tick 2.svg" alt="">
+                <h3>Wow 2 button! </h3>
+                <p class="modal--p"> You can also have 2 buttons if you want a primary and secondary action. </p> 
+                <div class="modal--Bflex">
+                    <button class="btn btn--primary btn--Wnormal btn--M">Close</button>
+                    <button class="btn btn--primary btn--Wnormal btn--M ">Confirm</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="modals__blocks">
+            <div>
+                <button class="btn btn--primary btn--Wnormal btn--modal">With 2 buttons</button>
+            </div>
+            <div class="modal__box modal--wide">
+                
+                <img class="close-wide " src="image/close.svg" alt="">
+                <div class="wide--flex">
+                    <img class="modal--i" src="image/tick 2.svg" alt="">
+                    <h3>I’m a wide modal! </h3>
+                </div>
+                <p class="modal--p"> You can use me whenever you need to write a longer message within the body! </p> 
+                <div class="modal--Bflex btn--Mwide">
+                    <button class="btn btn--primary btn--Wnormal btn--M">Close</button>
+                    <button class="btn btn--primary btn--Wnormal btn--M ">Confirm</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="modals__blocks">
+            <div>
+                <button class="btn btn--primary btn--Wnormal btn--modal">Mobile modals</button>
+            </div>
+            <div class="modal__box mobile--modal">
+                <img class="close-mobile" src="image/close.svg" alt="">
+                <img class="modal--i" src="image/tick 2.svg" alt="">
+                <h3>For mobile! </h3>
+                <p class="modal--p"> I’m a bit smaller to fit mobile screens! </p> 
+                <button class="btn btn--primary btn--Wnormal ">Cool!</button>
+            </div>
+        </div>
     </div>
     
     <h1>Tabs</h1>
