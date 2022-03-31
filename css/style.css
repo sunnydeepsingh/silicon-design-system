@@ -7,10 +7,18 @@
 body {
   background-color: var(--color--primary);
   font-family: Poppins, Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   color: white;
-  margin: 0 50px
+  margin: 0 10px;
 }
+@media screen and (min-width: 1024px) {
+  body{
+    margin: 0 50px;
+    font-size: 14px;
+  }
+  
+}
+
 
 /* Typography */
 h1 {
@@ -291,7 +299,8 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 392px;
+  width: 334px;
+  
   margin-bottom: 15px;
   background: #373951;
   border-radius: 15px;
@@ -311,12 +320,12 @@ textarea {
 }
 
 .close-margin {
-  margin-left: 320px;
+  margin-left: 260px;
   margin-top: 15px;
 }
 
 .close-wide {
-  margin-left: 458px;
+  margin-left: 315px;
   margin-top: 15px;
 }
 
@@ -334,7 +343,7 @@ textarea {
 }
 
 .modal--wide {
-  width: 550px;
+  width: 389px;
   height: 260px;
 }
 
@@ -342,11 +351,12 @@ textarea {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-right: 267px;
+  margin-right: 140px;
 }
 
 .btn--Mwide {
-  margin-left: 178px;
+  margin-left: 60px;
+  padding-bottom: 10px;
 }
 
 .mobile--modal {
@@ -355,8 +365,28 @@ textarea {
 }
 
 @media screen and (min-width: 1024px) {
+  .wide--flex {
+    gap: 10px;
+    margin-right: 267px;
+  }
   .modals__blocks {
     flex-direction: row;
+  }
+  .modal__box{
+    width: 392px;
+  }
+  .modal--wide{
+    width: 550px;
+    
+  }
+  .btn--Mwide {
+    margin-left: 178px;
+  }
+  .close-wide {
+    margin-left: 458px;
+  }
+  .close-margin {
+    margin-left: 320px;
   }
 }
 
@@ -366,7 +396,7 @@ textarea {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin: 3px 50px;
+  
 }
 .rc__block {
   display: flex;
@@ -469,8 +499,10 @@ input[type="checkbox"]:checked::after {
 @media screen and (min-width: 1024px) {
   .rc__main {
     flex-direction: row;
+    margin: 3px 50px;
     
   }
+  
 }
 /* chips */
 .chips {
@@ -686,28 +718,28 @@ input[type="checkbox"]:checked::after {
 .FileInput {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
+  align-items: center;
+  gap: 10px;
 }
 
 .file__card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   border: 5px dotted #353850;
   margin-bottom: 15px;
   border-radius: 20px;
 }
 
 .file-W{
-  width:598px;
+  width:300px;
 }
 .file2{
-  width:308px;
+  width:250px;
 
 }
 .small-f{
-  width:305px;
+  width:200px;
 }
 
 .file__card:hover {
@@ -722,6 +754,10 @@ input[type="checkbox"]:checked::after {
   display: flex;
   width:280px;
 }
+.or--line{
+  width: 225px;
+  }
+
 @media screen and (min-width: 1024px) {
   .FileInput {
     flex-direction: row;
@@ -735,8 +771,17 @@ input[type="checkbox"]:checked::after {
   .file__card {
     
     align-items: center;
-    
   }
+  .file-W{
+    width:598px;
+  }
+  .small-f{
+  width:305px;
+  }
+  .or--line{
+    width: 100%;
+    }
+
   
 }
 
@@ -746,6 +791,7 @@ input[type="checkbox"]:checked::after {
   justify-content: space-between;
   flex-direction: column;
   gap: 20px;
+  font-size: 10px;
 
 }
 
@@ -778,7 +824,7 @@ input[type="checkbox"]:checked::after {
   align-items: center;
   justify-content: center;
   height: 48px;
-  width: 210px;
+  width: 185px;
   cursor: pointer;
   transition: color 0.15s ease-in;
 }
@@ -814,7 +860,7 @@ input[id="radio-2"]:checked ~ .glider {
   border: 3px solid rgba(255, 255, 255, 0.2);
   position: absolute;
   height: 40px;
-  width: 210px;
+  width: 180px;
   background: linear-gradient(180deg, #5561ff 0%, #3643fc 100%, #3643fc 100%);
   z-index: 1;
   border-radius: 12px;
@@ -823,7 +869,7 @@ input[id="radio-2"]:checked ~ .glider {
 
 .tabs--with-icon .tab,
 .tabs--with-icon .glider {
-  width: 190px;
+  width: 120px;
 }
 
 input[id="radio-i1"]:checked ~ .glider {
@@ -839,7 +885,7 @@ input[id="radio-i3"]:checked ~ .glider {
 
 .tabs--t4 .tab,
 .tabs--t4 .glider {
-  width: 150px;
+  width: 85px;
 }
 
 input[id="radio-t4-1"]:checked ~ .glider {
@@ -858,7 +904,7 @@ input[id="radio-t4-4"]:checked ~ .glider {
 
 .tabs--t5 .tab,
 .tabs--t5 .glider {
-  width: 100px;
+  width: 70px;
 }
 
 input[id="radio-t5-1"]:checked ~ .glider {
@@ -880,7 +926,7 @@ input[id="radio-t5-5"]:checked ~ .glider {
 
 .tabs--t6 .tab,
 .tabs--t6 .glider {
-  width: 70px;
+  width: 60px;
 }
 
 input[id="radio-t6-1"]:checked ~ .glider {
@@ -928,6 +974,7 @@ input[id="radio-io4"]:checked ~ .glider {
     justify-content: center;
     gap: 25px;
     flex-direction: row;
+    font-size: 14px;
   }
   .tab {
     height: 48px;
