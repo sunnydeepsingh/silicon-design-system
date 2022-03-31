@@ -41,7 +41,7 @@ button {
 .icons {
   width: 20px;
   height: 18px;
-  padding-top: 2px;
+  padding-top: 4px;
 }
 /* Buttons*/
 .Buttons {
@@ -68,6 +68,11 @@ button {
   max-width: 186px;
 }
 
+.btn--flex{
+  display: flex;
+  width: 186px;
+
+}
 .btn--tall {
   height: 224px;
 }
@@ -143,6 +148,14 @@ button {
 .btn--round:hover {
   border: 3px solid grey;
 }
+
+.bttn{
+  display: flex;
+  align-items: center;
+    justify-content: center;
+    gap:7px;
+}
+
 
 @media screen and (min-width: 1024px) {
   .Buttons {
@@ -786,6 +799,10 @@ input[type="checkbox"]:checked::after {
       height: 48px;
       width: 60px;
     }
+    .D--small{
+      display: flex;
+      width: 223px;
+    } 
   
 }
 
@@ -1008,6 +1025,6 @@ input[id="radio-io4"]:checked ~ .glider {
 }
 .tabs--icon-only .tab,
 .tabs--icon-only .glider {
-  width: 77px;
+  width: 65px;
 }
 }
