@@ -701,7 +701,9 @@ input[type="checkbox"]:checked::after {
   border-radius: 12px;
   padding: 5px 0 5px 15px;
 }
-
+.collapsible__head{
+  padding: 2px 5px;
+}
 .dropdown__main {
   display: flex;
   flex-direction: column;
@@ -709,10 +711,24 @@ input[type="checkbox"]:checked::after {
 }
 .list-s {
   list-style-type: none;
-  padding: 10px 10px;
-  border-radius: 15px;
+  padding: 0;
+  background: #373951;
+  border-radius: 0 0 12px 12px;
+  margin-top: 0;
 }
+.lii{
+  padding: 8px 0 5px 8px;
+  }
 
+.lii:hover{
+  background:#3E405B ;
+
+}  
+
+.collapsible__head:hover{
+  background: #3E405B;
+  border-radius: 12px 12px 0 0;
+}
 
 
 @media screen and (min-width: 1024px) {
