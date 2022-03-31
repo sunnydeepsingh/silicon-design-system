@@ -427,7 +427,7 @@ input[type="checkbox"]:checked {
 input[type="checkbox"]:checked::after {
   content: "\2713";
   font-weight: bolder;
-  color: var(--color-text);
+  color: #fff;
   display: block;
   text-align: center;
 }
@@ -629,6 +629,11 @@ input[type="checkbox"]:checked::after {
 .list-s {
   list-style-type: none;
   background: #373951;
+  padding: 10px 10px;
+  border-radius: 15px;
+}
+.li--color:hover {
+  background: red;
 }
 .Cc--head {
   background: #3e405b;
