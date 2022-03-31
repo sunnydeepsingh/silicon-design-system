@@ -603,6 +603,8 @@ input[type="checkbox"]:checked::after {
   .disclosures {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin: 5px 50px;
   }
   .dCard--margin {
     margin-left: 20px;
@@ -640,6 +642,11 @@ input[type="checkbox"]:checked::after {
   .dropdown__main {
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    margin: 5px 50px;
+  }
+  .dropCard {
+    margin-left: 110px;
   }
 }
 /* File Input */
@@ -670,6 +677,8 @@ input[type="checkbox"]:checked::after {
 @media screen and (min-width: 1024px) {
   .FileInput {
     flex-direction: row;
+    justify-content: space-between;
+    margin: 5px 80px;
   }
   .file--input {
     width: 250px;
