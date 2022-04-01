@@ -401,6 +401,9 @@ textarea {
   .close-margin {
     margin-left: 320px;
   }
+  .mobile--modal{
+    width: 272px;
+  }
 }
 
 /* Radios & Checkboxes */
