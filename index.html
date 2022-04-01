@@ -1,574 +1,1064 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/e391c23c79.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=PT+Serif:ital@1&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>Silicon Design System</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <H1>Buttons</H1>
-    <div class="Buttons">
-        <div class="btn__blocks">
-            <button class="btn btn--primary btn--Wnormal">Press me!</button>
-        </div>
-        <div class="btn__blocks ">
-            <div class="btn--flex">
-                 
-                <button class="btn btn--primary btn--Wnormal bttn"> <div><img class="icons i--2" src="image/Vector.svg" alt=""></div> 
-                    <div class="btn--p" > I have a icon! </div> </button>
-            </div>
-            <button class="btn btn--primary btn--Wnormal"> <img class="icons" src="image/Line.svg" alt=""></button>
-        </div>
-        <div class="btn__blocks">
-            <button class="btn btn--secondary btn--Wnormal">i'm secondary!</button>
-            <button class="btn btn--backSame btn--Wnormal btn--ghost"> I'm ghost!</button>
-            <button class="btn btn--backSame btn--Wnormal btn--noBorder">I'm tertiary!</button>
-        </div>
-        <div class="btn__blocks">
-            <button class="btn btn--secondary btn--Wnormal btn--tall">I'm tall</button>
-        </div>
-        <div class="btn__blocks">
-            <button class="btn btn--primary btn--Wnormal btn--long">i'm looooooooooong</button>
-            <div class="btnBwide">
-                <button class=" btn--secondary btn--round"> <img class="icons"  src="image/Home.svg" alt=""></button>
-                <button class=" btn--secondary btn--slong"><img class="icons" src="image/Home.svg" alt=""></button>
-            </div>
-        </div>
-    </div>
-    <h1>Text Inputs</h1>
-    <div class="inputs">
-        <div class="input__block">
-            <input class="iBlock input_color input--hover Iwidth_all" type="text" placeholder="  look at this placeholder">
-            <span class="bigboy__margin">
-                <label class="iLable" for="largerInputs">I'm a big boy</label>
-                <textarea class="iBlock iBlock--tall input__block input_color input--hover Iwidth_all" id="largerInputs" cols="40" rows="10" placeholder="Used for larger inputs"></textarea>
-            </span>
-        </div>
-        <div class="input__block ">
-            <div class="input_color  Iwidth_all inplut--flex input--bottom">
-                <img class="iImg" src="image/search.svg" alt="">
-                <input class="input__icon iBlock--icon input--hover " type="text" placeholder="Look an icon!">
-            </div>
-            <span class="iblock--flex">
-                <label class="iLable" for="placeholder">With a label!</label>
-                <input class="iBlock input_color input--hover Iwidth_all" id="placeholder" type="text" placeholder="  Placeholder">
-            </span>
-            
-        </div>
-        <div class="input__block" >
-            <input class="iBlock input_color input--hover Iwidth_all center__input" type="text" placeholder="  I'm centered!">
-            <span class="iblock--flex error__margin input--hover">
-                <input id="error" class="iBlock iError Iwidth_all" type="text">
-                <label for="error" class=" iError--lable" for="placeholder">Oh no here's an error message!</label>
-            </span>
-        </div>
-    </div>
+:root {
+  --color--primary: #323347;
+  --color--secondary:linear-gradient(180deg, #5561FF 0%, #3643FC 100%, #3643FC 100%);
+  --color--btndark: rgba(255, 255, 255, 0.1);
+}
 
-    <h1>Radios & Checkboxes</h1>
-    <div class="rc__main">
-
-        <div class="rc__block ">
-            <span class="rc__margin ">
-                <input class="input_color" type="radio">
-            </span>
-            <span class="rc__icon rc__margin">
-                <input type="radio">
-                <img class="rc__IBmargin" src="image/house-door.svg" alt="">
-            </span>
-        </div>
-    
-        <div class="rc__block ">
-            <span class="rc__margin">
-                <input class="input_color" id="withalable" type="radio">
-                <label class="rc__IBmargin" for="withalable"> With a lable</label>
-            </span>
-            <span class="rc__icon rc__margin">
-                <input id="woithIcon" type="radio">
-                <img class="rc__IBmargin" src="image/house-door.svg" alt="">
-                <label class="rc__IBmargin" for="woithIcon"> With label and icon</label>
-            </span>
-        </div>
-        <div class="rc__block">
-            <span class="rc__margin">
-                <input class="input_color" type="checkbox">
-            </span>
-            <span class="rc__icon rc__margin">
-                <input type="checkbox">
-                <img class="rc__IBmargin" src="image/house-door.svg" alt="">
-            </span>
-        </div>
-    
-        <div class="rc__block">
-            <span class="rc__margin">
-                <input class="input_color" id="alsowithalable" type="checkbox">
-                <label class="rc__IBmargin" for="alsowithalable"> Also With a lable</label>
-            </span>
-            <span class="rc__icon rc__margin">
-                <input id="woithIcon2" type="checkbox">
-                <img class="rc__IBmargin" src="image/house-door.svg" alt="">
-                <label class="rc__IBmargin" for="woithIcon2"> With label and icon</label>
-            </span>
-    
-        </div>
-    </div>
-
-    <H2>This is a radio group</H2>
-    <div class="radio__group">
-        <span>
-            <input id="switchfromme" name="radioGroup" type="radio">
-            <label for="switchfromme">Switch from me</label>
-        </span>
-        <span>
-            <input id="Tome" name="radioGroup" type="radio">
-            <label for="Tome">To me</label>
-        </span>
-        <span>
-            <input id="Orme" name="radioGroup" type="radio">
-            <label for="Orme">Or me!</label>
-        </span>
-
-    </div>
-        
-    <h1>Chips</h1>
-    <div class="chips__main">
-        <div class=" chips__block">
-            <button class="chips chips--border chips--margin">Hi I'm called a chip!</button>
-            <button class="chips chips--border chips--margin">I use a bigger text size!</button>
-        </div>
-        <div class="chips__block chip2--margin">
-            <h2>This is a chip group</h2>
-            <div>
-                <button class="chips chips--border">
-                    <img src="image/tick.svg" alt=""> Imo</button>
-                <button class="chips chips--border">  
-                    <img src="image/tick.svg" alt="">Ludi</button>
-                <button class="chips chips--border">
-                    <img src="image/tick.svg" alt=""> Ndaru</button>
-
-            </div>
-        </div>
-
-    </div>
-
-    <h1>Cards</h1>
-    <div class="cards">
-        <div class="card__main">
-            <span class="cards--primary card1">
-                <h3 class="card--text">Hi I'm a card!</h3>
-                <p class="card--text">I also have a body text!</p>
-            </span>
-            <div class="card2">
-                
-                <div class="cards--primary footer--margin">
-                    <h3 class=" card--footer card--text">oh look an image!</h3>
-                </div>
-            </div>
-        </div>
-        <div class="card__main">
-            <span class="cards--secondary card3">
-                <img class="img--card" src="image/plants.svg" alt="">
-                <div class="cards--primary text-primary"> 
-                    <h3 class="card--text">Wow a button!</h3>
-                    <button class="btn btn--primary btn--Wnormal">I'm a button!</button>
-                </div>
-            
-            </span> 
-        </div>
-        <div class="card__main">
-            <span class="cards--secondary card4">
-                <img class="img--card" src="image/card image 3.svg" alt="">
-                <div class="cards--primary text-primary">
-                    <h3 class="card--text">This card has everything</h3>
-                    <p class="card--text">I have an image, tile, body and even a button!</p>
-                    <button class="btn btn--primary btn--Wnormal">I'm a button!</button>
-                </div>
-            </span>
-        </div>
-
-    </div>
-    
-    <h1>Disclosures</h1>
-    <div class="disclosures">
-
-        <div>
-            <section class="collapsible collapsible--expanded dCard bCard1" >
-                <div class="collapsible__head ">
-                    <p>What is a disclosure?</p> 
-                    <img class="collapsible__chevron" src="image/chevron.svg" alt="">
-                </div>
-                <div class="collapsible__content collapsible--expanded">
-                    <p>A simple, accessible foundation for building custom UIs that show and hide content, like togglable accordion panels.</p>
-                </div>
-            </section>
-            <section class="collapsible dCard dCard bCard1" >
-                <div class="collapsible__head">
-                    <p>I'm closed!</p> 
-                    <img class="collapsible__chevron" src="image/chevron.svg" alt="">
-                </div>
-                <div class="collapsible__content collapsible--expanded">
-                    <p>A simple, accessible foundation for building custom UIs that show and hide content, like togglable accordion panels.</p>
-                </div>
-            </section>
-        </div>
-        <div class=" dCard--margin">
-            <section class="collapsible collapsible--expanded bCard1 dCard" >
-                <div class="collapsible__head">
-                    <p class="">You can also make accordians!</p> 
-                    <img class="collapsible__chevron" src="image/chevron.svg" alt="">
-                </div>
-                <div class="collapsible__content collapsible--expanded">
-                    <p>Make sure you use auto layouts to get that cool expanding effect!</p>
-                </div>
-            </section>
-            <section class="collapsible collapsible--expanded dCard" >
-                <div class="collapsible__head">
-                    <p>I’m part of the accordian</p> 
-                    <img class="collapsible__chevron" src="image/chevron.svg" alt="">
-                </div>
-                <div class="collapsible__content collapsible--expanded">
-                    <p>An accordion is a vertically stacked group of collapsible sections.</p>
-                </div>
-            </section>
-        </div>
-    </div>
-
-    <h1>Dropdowns</h1>
-    <div class="dropdown__main">
-        <section class="collapsible dropCard" >
-            <div class="collapsible__head">
-                <p class="">I'm a dropdown!</p> 
-                <img class="collapsible__chevron" src="image/chevron.svg" alt="">
-            </div>
-            <div class="collapsible__content collapsible--expanded">
-                <ul class="list-s">
-                    <li class="lii" >Level 1</li class="lii">
-                    <li class="lii">Level 2</li class="lii">
-                    <li class="lii">Level 3</li class="lii">
-                </ul>
-            </div>
-        </section>
-        <section class="collapsible dropCard" >
-            <div class="collapsible__head">
-                <p class="">I can go from only 1 item</p> 
-                <img class="collapsible__chevron" src="image/chevron.svg" alt="">
-            </div>
-            <div class="collapsible__content collapsible--expanded">
-                <ul class="list-s">
-                    <li class="lii" > lable 1</li>
-                </ul>
-            </div>
-        </section>
-        <section class="collapsible dropCard" >
-            <div class="collapsible__head">
-                <p class="">To having 12 items!</p> 
-                <img class="collapsible__chevron" src="image/chevron.svg" alt="">
-            </div>
-            <div class="collapsible__content collapsible--expanded">
-                <ul class="list-s">
-                    <li class="lii">Level 1</li class="lii">
-                    <li class="lii">Level 2</li class="lii">
-                    <li class="lii">Level 3</li class="lii">
-                    <li class="lii">Lavel 4</li class="lii">
-                    <li class="lii">Lavel 5</li class="lii">
-                    <li class="lii">Lavel 6</li class="lii">
-                    <li class="lii">Lavel 7</li class="lii">
-                    <li class="lii">Lavel 8</li class="lii">
-                    <li class="lii">Lavel 9</li class="lii">
-                    <li class="lii">Lavel 10</li class="lii">
-                    <li class="lii">Lavel 11</li class="lii">
-                    <li class="lii">Lavel 12</li class="lii">
-                </ul>
-            </div>
-        </section>    
-    </div>         
-       
-        <h3>My values can also change!</h3>
-        <section class="collapsible dropCard" >
-            <div class="collapsible__head">
-                <p class="">I can go from only 1 item</p> 
-                <img class="collapsible__chevron" src="image/chevron.svg" alt="">
-            </div>
-            <div class="collapsible__content collapsible--expanded">
-                <ul class="list-s">
-                    <li class="lii">Lable 1</li class="lii">
-                    <li class="lii">Lable 2</li class="lii">
-                    <li class="lii">Lable 3</li class="lii">
-                    <li class="lii">Lable 4</li class="lii">
-
-                </ul>
-            </div>
-        </section>
-    
-    <h1>File Inputs</h1>
-    <div class="FileInput">
-
-        <div class="file__block file-W">
-            <section class="file__card">
-                <img src="image/Upload Illustration.svg" alt="">
-                <p>You can click me to upload files!</p>
-                <p>secondary message</p>
-            </section>
-            <section class="file__card">
-                <img src="image/Upload Illustration.svg" alt="">
-                <p>You can click me to upload files!</p>
-                <p>secondary message</p>
-                <img class="or--line" src="image/Frame 47193.svg" alt="">
-                <p>you can also paste a Google Drive link!</p>
-                <div class="long--in">
-                    <input class="iBlock input_color file--input" type="text" placeholder="  Google drive link">
-                    <button class="btn btn--primary btn--FWnormal"> <img class="icons" src="image/Save.svg" alt=""></button>
-                </div>
-            </section>
-        </div>
-        <div class="file__block file2">
-            <section class="file__card">
-                <img src="image/Upload Illustration.svg" alt="">
-                <p>I'm a mobile-friendly version!</p>
-                <p>secondary message</p>
-            </section>
-            <section class="file__card">
-                <img src="image/Upload Illustration.svg" alt="">
-                <p>I'm a mobile-friendly version!</p>
-                <p>secondary message</p>
-                <img class="small-f" src="image/Frame 47193.svg" alt="">
-                <p>you can also paste a Google Drive link!</p>
-                <div class="D--small">
-                    <input class="iBlock input_color file--input " type="text" placeholder="  Google drive link">
-                    <button class="btn btn--primary btn--FWnormal"> <img class="icons" src="image/Save.svg" alt=""></button>
-                </div>
-            </section>
-        </div>
-    </div>
-
-    <h1>Modals</h1>
-    <div class="modal__main" >
-        <div class="modals__blocks">
-            <div>
-                <button class="btn btn--primary btn--Wnormal btn--modal">Basic modal</button>
-            </div>
-            <div class="modal__box">
-                <img class="modal--i" src="image/tick 2.svg" alt="">
-                <h3>Hi I'm a modal </h3>
-                <p class="modal--p">  I have a basic icon, heading, and body text. I have no buttons or a close button so press outside the modal to close! </p> 
-            </div>
-        </div>
-        <div class="modals__blocks">
-            <div>
-                <button class="btn btn--primary btn--Wnormal btn--modal">With a close button</button>
-            </div>
-            <div class="modal__box">
-                <img class="close-margin" src="image/close.svg" alt="">
-                <img class="modal--i" src="image/tick 2.svg" alt="">
-                <h3>Wow a button! </h3>
-                <p class="modal--p"> This modal has a basic button to initiate an action within a modal. </p> 
-                <button class="btn btn--primary btn--Wnormal ">You can press me!</button>
-            </div>
-        </div>
-        <div class="modals__blocks">
-            <div>
-                <button class="btn btn--primary btn--Wnormal btn--modal">With an image</button>
-            </div>
-            <div class="modal__box">
-                <img class="close-margin" src="image/close.svg" alt="">
-                <img class="modal--i" src="image/1.svg" alt="">
-                <h3>I have an image! </h3>
-                <p class="modal--p">Modals can also have images to illustrate your point more clearly. </p> 
-            </div>
-        </div>
-        <div class="modals__blocks">
-            <div>
-                <button class="btn btn--primary btn--Wnormal btn--modal">With 2 buttons</button>
-            </div>
-            <div class="modal__box">
-                <img class="close-margin" src="image/close.svg" alt="">
-                <img class="modal--i" src="image/tick 2.svg" alt="">
-                <h3>Wow 2 button! </h3>
-                <p class="modal--p"> You can also have 2 buttons if you want a primary and secondary action. </p> 
-                <div class="modal--Bflex">
-                    <button class="btn btn--primary btn--Wnormal btn--M">Close</button>
-                    <button class="btn btn--primary btn--Wnormal btn--M ">Confirm</button>
-
-                </div>
-            </div>
-        </div>
-        <div class="modals__blocks">
-            <div>
-                <button class="btn btn--primary btn--Wnormal btn--modal">With 2 buttons</button>
-            </div>
-            <div class="modal__box modal--wide">
-                
-                <img class="close-wide " src="image/close.svg" alt="">
-                <div class="wide--flex">
-                    <img class="modal--i" src="image/tick 2.svg" alt="">
-                    <h3>I’m a wide modal! </h3>
-                </div>
-                <p class="modal--p"> You can use me whenever you need to write a longer message within the body! </p> 
-                <div class="modal--Bflex btn--Mwide">
-                    <button class="btn btn--primary btn--Wnormal btn--M">Close</button>
-                    <button class="btn btn--primary btn--Wnormal btn--M ">Confirm</button>
-
-                </div>
-            </div>
-        </div>
-        <div class="modals__blocks">
-            <div>
-                <button class="btn btn--primary btn--Wnormal btn--modal">Mobile modals</button>
-            </div>
-            <div class="modal__box mobile--modal">
-                <img class="close-mobile" src="image/close.svg" alt="">
-                <img class="modal--i" src="image/tick 2.svg" alt="">
-                <h3>For mobile! </h3>
-                <p class="modal--p"> I’m a bit smaller to fit mobile screens! </p> 
-                <button class="btn btn--primary btn--Wnormal ">Cool!</button>
-            </div>
-        </div>
-    </div>
-    
-    <h1>Tabs</h1>
-    
-    <section class="container">
-        
-        
-        <section>
-          <div class="tabs-container">
-            <div class="tabs">
-              <input type="radio" id="radio-1" name="tabs" checked />
-              <label class="tab" for="radio-1">I'm a tab!</label>
-              <input type="radio" id="radio-2" name="tabs" />
-              <label class="tab" for="radio-2">Now switch to me!!</label>
-              <span class="glider"></span>
-            </div>
-          </div>
+body {
+  background-color: var(--color--primary);
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: white;
+  margin: 0 10px;
+}
+@media screen and (min-width: 1024px) {
+  body{
+    margin: 0 50px;
+    font-size: 14px;
+  }
   
-          <div class="tabs-container">
-            <div class="tabs tabs--with-icon">
-              <input type="radio" id="radio-i1" name="tabs" checked />
-                <label class="tab" for="radio-i1">
-                  <span>
-                    <img class="icon--tabs"
-                    src="image/Home.svg"
-                    alt="house icon" />
-                    </span>I can also have icons</label>
-              <input type="radio" id="radio-i2" name="tabs" />
-              <label class="tab" for="radio-i2">
-                  <span>
-                    <img class="icon--tabs"
-                    src="image/door-closed.svg"
-                    alt="house door icon" />
-                </span>Wow a door</label
-              >
-              <input type="radio" id="radio-i3" name="tabs" />
-              <label class="tab" for="radio-i3"
-                ><span>
-                    <img class="icon--tabs"
-                    src="image/cart4.svg"
-                    alt="shopping cart icon" />
-                    </span>Now a shopping cart
-               </label>
-              <span class="glider"></span>
-            </div>
-          </div>
-  
-          <div class="tabs-container">
-            <div class="tabs tabs--t4">
-              <input type="radio" id="radio-t4-1" name="tabs" checked />
-              <label class="tab" for="radio-t4-1">Tab</label>
-              <input type="radio" id="radio-t4-2" name="tabs" />
-              <label class="tab" for="radio-t4-2">Tab</label>
-              <input type="radio" id="radio-t4-3" name="tabs" />
-              <label class="tab" for="radio-t4-3">Tab</label>
-              <input type="radio" id="radio-t4-4" name="tabs" />
-              <label class="tab" for="radio-t4-4">Tab</label>
-              <span class="glider"></span>
-            </div>
-          </div>
-  
-          <div class="tabs-container">
-            <div class="tabs tabs--t5">
-              <input type="radio" id="radio-t5-1" name="tabs" checked />
-              <label class="tab" for="radio-t5-1">Tab</label>
-              <input type="radio" id="radio-t5-2" name="tabs" />
-              <label class="tab" for="radio-t5-2">Tab</label>
-              <input type="radio" id="radio-t5-3" name="tabs" />
-              <label class="tab" for="radio-t5-3">Tab</label>
-              <input type="radio" id="radio-t5-4" name="tabs" />
-              <label class="tab" for="radio-t5-4">Tab</label>
-              <input type="radio" id="radio-t5-5" name="tabs" />
-              <label class="tab" for="radio-t5-5">Tab</label>
-              <span class="glider"></span>
-            </div>
-          </div>
-  
-          <div class="tabs-container">
-            <div class="tabs tabs--t6">
-              <input type="radio" id="radio-t6-1" name="tabs" checked />
-              <label class="tab " for="radio-t6-1">Tab</label>
-              <input type="radio" id="radio-t6-2" name="tabs" />
-              <label class="tab" for="radio-t6-2">Tab</label>
-              <input type="radio" id="radio-t6-3" name="tabs" />
-              <label class="tab" for="radio-t6-3">Tab</label>
-              <input type="radio" id="radio-t6-4" name="tabs" />
-              <label class="tab" for="radio-t6-4">Tab</label>
-              <input type="radio" id="radio-t6-5" name="tabs" />
-              <label class="tab" for="radio-t6-5">Tab</label>
-              <input type="radio" id="radio-t6-6" name="tabs" />
-              <label class="tab" for="radio-t6-6">Tab</label>
-              <span class="glider"></span>
-            </div>
-          </div>
-        </section>
-          
-        <section class="section--side">
+}
 
-            <h2>Works great for mobile too!</h3>
-            
-              <div class="tabs-container tab--side">
-                <div class="tabs tabs--icon-only">
-                  <input type="radio" id="radio-io1" name="tabs" checked />
-                  <label class="tab " for="radio-io1"
-                    ><span
-                      ><img
-                        class="rc--icon tab--1"
-                        src="image/Home.svg"
-                        alt="house icon" /></span
-                  ></label>
-                  <input type="radio" id="radio-io2" name="tabs" />
-                  <label class="tab" for="radio-io2"
-                    ><span
-                      ><img
-                        class="icon--tabs"
-                        src="image/search--w.svg"
-                        alt="search icon" /></span
-                  ></label>
-                  <input type="radio" id="radio-io3" name="tabs" />
-                  <label class="tab" for="radio-io3"
-                    ><span
-                      ><img
-                        class="icon--tabs"
-                        src="image/heart.svg"
-                        alt="heart icon" /></span
-                  ></label>
-                  <input type="radio" id="radio-io4" name="tabs" />
-                  <label class="tab" for="radio-io4"
-                    ><span
-                      ><img
-                        class="icon--tabs last--i"
-                        src="image/ProfileAccount.svg"
-                        alt="User profile icon" /></span
-                  ></label>
-                  <span class="glider"></span>
-                </div>
-              </div>
-        </section>   
-        
-      </section>
+
+/* Typography */
+h1 {
+  color: white;
+}
+
+button {
+  color: white;
+}
+
+.btn {
+  font-size: 14px;
+}
+.iError--lable {
+  color: #e4697d;
+  margin: 2px 0 0 15px;
+}
+
+/* icons */
+.icons {
+  width: 20px;
+  height: 18px;
+  padding-top: 4px;
+}
+/* Buttons*/
+.Buttons {
+  display: flex;
+
+  flex-direction: column;
+}
+.btn__blocks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 10px;
+  align-items: center;
+}
+.btn {
+  border-radius: 12px;
+  margin: 5px 0;
+}
+
+.btn--Wnormal {
+  height: 48px;
+  width: 100%;
+  max-width: 186px;
+}
+
+.btn--flex{
+  display: flex;
+  width: 186px;
+
+}
+.btn--tall {
+  height: 224px;
+}
+
+.btn--long {
+  min-width: 380px;
+}
+.btn--slong {
+  min-width: 320px;
+  padding: 10px 0;
+  border-radius: 12px;
+}
+
+.btn--primary {
+  background: var(--color--secondary);
+  border: 0;
+}
+.btn--primary:hover {
+  background: #6d76ff;
+  box-shadow: 2px 8px 20px #111;
+}
+
+.btn--primary:active {
+  background: #515dfe80;
+  box-shadow: none;
+}
+
+.btn--secondary {
+  background: var(--color--btndark);
+  border: 0;
+}
+.btn--secondary:hover {
+  box-shadow: 2px 8px 20px #111;
+}
+
+.btn--secondary:active {
+  box-shadow: 2px 8px 20px rgba(17, 17, 17, 0.541);
+  box-shadow: none;
+}
+.btn--backSame {
+  background: var(--color--primary);
+  border: 2px solid #666990;
+}
+.btn--backSame:hover {
+  border: 2px solid #8e8f92;
+}
+
+.btn--noBorder {
+  border: 0;
+}
+
+.btn--backSame:hover {
+  box-shadow: 2px 8px 20px #111;
+}
+
+.btn--noBorder:active {
+  background: #1718249d;
+  box-shadow: none;
+}
+
+.btn--round {
+  border-radius: 36px;
+  height: 48px;
+  width: 48px;
+}
+
+.btn--ghost:active {
+  border-color: #666990;
+  box-shadow: none;
+}
+
+.btn--slong:hover,
+.btn--round:hover {
+  border: 3px solid grey;
+}
+
+.bttn{
+  display: flex;
+  align-items: center;
+    justify-content: center;
+    gap:7px;
+}
+
+
+@media screen and (min-width: 1024px) {
+  .Buttons {
+    flex-direction: row;
+  }
+}
+
+/* input*/
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: white;
+}
+.center__input::placeholder {
+  padding-left: 130px;
+  
+}
+
+textarea {
+  resize: none;
+  outline: 0;
+  white-space: nowrap;
+}
+.input--hover:hover::placeholder {
+  color: white;
+}
+
+.input__block {
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  width: 100%;
+}
+
+.iBlock {
+  margin: 5px 15px;
+  height: 48px;
+  max-width: 350px;
+  overflow: hidden;
+  outline: 0;
+}
+
+.iLable {
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+.iImg {
+  width: 20px;
+  margin-bottom: 10px;
+  
+}
+.iBlock--tall {
+  height: 392px;
+  width: 88%;
+  padding: 10px 0 0 10px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+.Imargin__icon {
+  margin: 10px 10px;
+  max-width: 350px;
+}
+.iBlock--icon {
+  background: none;
+  border: none;
+  width: 270px;
+  outline: 0;
+}
+.input__icon {
+  margin-bottom: 10px;
+}
+.iError {
+  background: none;
+  border: 2px solid #e4697d;
+  border-radius: 15px;
+}
+
+.input_color {
+  background: none;
+  border: 2px solid #6d7198;
+  border-radius: 15px;
+  color: white;
+}
+
+.iblock--flex {
+  display: flex;
+  flex-direction: column;
+}
+.error__margin {
+  margin-top: 46px;
+}
+
+.bigboy__margin {
+  margin-top: 30px;
+}
+
+.Iwidth_all {
+  width: 392px;
+}
+
+.Iheight_all{
+  height:40px;
+}
+.inplut--flex{
+  display: flex;
+  padding: 10px 0 0 5px;
+  gap: 5px;
+  height:40px;
+ 
+}
+.input--bottom{
+  margin: 5px 10px;
+  max-width: 350px;
+ 
+}
+
+@media screen and (min-width: 1024px) {
+  .inputs {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    color: white;
+  }
+  .input__block {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    width: 100%;
+  }
+  .Iwidth_all {
+    width: 90%;
+  }
+}
+
+/* modals*/
+
+.modal__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modals__blocks {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 334px;
+  
+  margin-bottom: 15px;
+  background: #373951;
+  border-radius: 15px;
+  padding-bottom: 15px;
+}
+
+.modal--p {
+  padding: 0 15px 15px 20px;
+}
+.modal--i {
+  padding-top: 15px;
+}
+
+.btn--modal {
+  width: 189px;
+  margin-right: 15px;
+}
+
+.close-margin {
+  margin-left: 260px;
+  margin-top: 15px;
+}
+
+.close-wide {
+  margin-left: 315px;
+  margin-top: 15px;
+}
+
+.close-mobile {
+  margin-left: 215px;
+  margin-top: 15px;
+}
+
+.modal--Bflex {
+  display: flex;
+  gap: 15px;
+}
+.btn--M {
+  width: 150px;
+}
+
+.modal--wide {
+  width: 389px;
+  height: 260px;
+}
+
+.wide--flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 140px;
+}
+
+.btn--Mwide {
+  margin-left: 60px;
+  padding-bottom: 10px;
+}
+
+.mobile--modal {
+  width: 272px;
+  height: 314px;
+}
+
+@media screen and (min-width: 1024px) {
+  .wide--flex {
+    gap: 10px;
+    margin-right: 267px;
+  }
+  .modals__blocks {
+    flex-direction: row;
+  }
+  .modal__box{
+    width: 392px;
+  }
+  .modal--wide{
+    width: 550px;
+    
+  }
+  .btn--Mwide {
+    margin-left: 178px;
+  }
+  .close-wide {
+    margin-left: 458px;
+  }
+  .close-margin {
+    margin-left: 320px;
+  }
+  .mobile--modal{
+    width: 272px;
+  }
+}
+
+/* Radios & Checkboxes */
+
+.rc__main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  
+}
+.rc__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.rc__icon {
+  display: flex;
+  align-items: center;
+}
+
+.rc__margin {
+  margin-bottom: 30px;
+}
+.rc__IBmargin {
+  margin: 0 6px;
+}
+
+.radio__group {
+  display: flex;
+  flex-direction: column;
+}
+input[type="radio"] {
+  cursor: pointer;
+}
+input[type="radio"]::after {
+  background-color: #323347;
+  border: 2px solid #fff;
+  border-radius: 9px;
+  height: 10px;
+  width: 10px;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+}
+input[type="radio"]:checked:after {
+  background-color: #fff;
+  border: 3px solid #3643fc;
+  border-radius: 9px;
+  height: 10px;
+  width: 10px;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+}
+
+input[type="checkbox"] {
+  float: left;
+  height: 15px;
+  width: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  outline: none;
+  transition-duration: 0.3s;
+  background-color: #323347;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked {
+  background-color: #3643fc;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "\2713";
+  font-weight: bolder;
+  color: var(--color-text);
+  display: block;
+  text-align: center;
+}
+input[type="checkbox"] {
+  float: left;
+  height: 20px;
+  width: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  outline: none;
+  transition-duration: 0.3s;
+  background-color: #323347;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked {
+  background-color: #3643fc;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "\2713";
+  font-weight: bolder;
+  color: #fff;
+  display: block;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .rc__main {
+    flex-direction: row;
+    margin: 3px 50px;
+    
+  }
+  
+}
+/* chips */
+.chips {
+  cursor: pointer;
+  background: #3d3e50;
+}
+.chips__main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.chips__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.chips--margin {
+  margin-top: 20px;
+}
+.chips--border {
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 3px 5px;
+}
+
+.chips:hover {
+  background: #818188c4;
+}
+.chips:focus {
+  background: rgba(33, 137, 255, 0.801);
+}
+
+@media screen and (min-width: 1024px) {
+  .chips__main {
+    flex-direction: row;
+  }
+  .chip2--margin {
+    margin-left: 60px;
+  }
+}
+/* Cards */
+
+.card__main {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 15px;
+  align-items: center;
+}
+.cards--primary {
+  background: #3e405b;
+  border-radius: 15px;
+}
+.cards--secondary {
+  background: #353850;
+  border-radius: 15px;
+}
+
+.card--footer {
+  margin-top: 200px;
+  padding: 15px 5px;
+}
+
+.card2 {
+  margin-top: 15px;
+  background: url(../image/Image\ Frame.svg);
+  background-repeat: no-repeat;
+  width: 250px;
+}
+.card1 {
+  max-width: 250px;
+}
+.card3 {
+  margin-bottom: 10px;
+  max-width: 250px;
+}
+.card4 {
+  max-width: 250px;
+}
+
+.img--card {
+  width: 100%;
+}
+
+.card--text {
+  margin-left: 10px;
+}
+.text-primary {
+  padding: 8px 10px;
+}
+@media screen and (min-width: 1024px) {
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+  }
+  .card__main {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 15px;
+    align-items: center;
+    align-items: stretch;
+  }
+  .card2 {
+    width: 289px;
+  }
+  .card3 {
+    max-width: 495px;
+  }
+
+  .card4 {
+    max-width: 392px;
+  }
+}
+
+/*disclosures */
+
+.disclosures {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dCard {
+  width: 300px;
+  border: 4px solid #3d3e50;
+  border-radius: 12px;
+  padding: 5px 0 5px 15px;
+}
+
+.collapsible__head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dCard:hover {
+  background: #353850;
+  border-radius: 12px;
+}
+.dCard--margin {
+  margin-top: 40px;
+}
+
+.collapsible__chevron {
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+  padding-right: 5px;
+}
+
+.collapsible__content {
+  display: none;
+}
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+  display: block;
+}
+
+.bCard1 {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+  .disclosures {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px 70px;
+  }
+  .dCard--margin {
+    margin-left: 20px;
+  }
+  .dCard {
+    width: 490px;
+  }
+}
+/* Dropdowns*/
+
+.dropCard {
+  width: 256px;
+  border-radius: 12px;
+  padding: 5px 0 5px 15px;
+}
+.collapsible__head{
+  padding: 2px 5px;
+}
+.dropdown__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list-s {
+  list-style-type: none;
+  padding: 0;
+  background: #373951;
+  border-radius: 0 0 12px 12px;
+  margin-top: 0;
+}
+.lii{
+  padding: 8px 0 5px 8px;
+  }
+
+.lii:hover{
+  background:#3E405B ;
+
+}  
+
+.collapsible__head:hover{
+  background: #3E405B;
+  border-radius: 12px 12px 0 0;
+}
+
+
+@media screen and (min-width: 1024px) {
+  .dropdown__main {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 50px;
+  }
+  .dropCard {
+    margin-left: 110px;
+  }
+}
+/* File Input */
+
+.FileInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  
+}
+
+.file__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px dotted #353850;
+  margin-bottom: 15px;
+  border-radius: 20px;
+}
+
+.file-W{
+  width:300px;
+}
+.file2{
+  width:250px;
+
+}
+.small-f{
+  width:200px;
+}
+
+.file__card:hover {
+  border-color: #3eebbe;
+}
+.btn--FWnormal {
+  height: 48px;
+  width: 50px;
+}
+
+.D--small{
+  display: flex;
+  width:280px;
+  align-items: center;
+}
+.or--line{
+  width: 225px;
+  }
+.long--in{
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .FileInput {
+    flex-direction: row;
+    justify-content: center;
+    gap: 300px;
+    margin: 5px 100px;
+  }
+  .file--input {
+    width: 250px;
+  }
+  .file__card {
+    
+    align-items: center;
+  }
+  .file-W{
+    width:598px;
+  }
+  .small-f{
+  width:235px;
+  }
+  .or--line{
+    width: 100%;
+    }
+  .btn--FWnormal {
+      height: 48px;
+      width: 60px;
+    }
+    .D--small{
+      display: flex;
+      width: 223px;
+    } 
+  
+}
+
+/* tabs */
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 10px;
+
+}
+
+.tabs-container {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  width: 804px;
+  margin-bottom: 15px;
+}
+.tabs {
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 16px;
+  display: flex;
+  position: relative;
+  gap: 5px;
+}
+.tabs * {
+  z-index: 2;
+}
+.tabs-container input[type="radio"] {
+  display: none;
+}
+
+.tab {
+  border-radius: 12px;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 185px;
+  cursor: pointer;
+  transition: color 0.15s ease-in;
+}
+
+.tab--side {
+  width: 328px;
+}
+
+.icon--tabs {
+  padding-right: 8px;
+  padding-top: 2px;
+}
+
+.tab--iWhite {
+  fill: white;
+}
+.tab:hover {
+  background: var(--color-secondary);
+}
+
+input[type="radio"]:checked + label {
+  color: var(--color-text);
+}
+input[id="radio-1"]:checked ~ .glider {
+  transform: translateX(0);
+}
+
+input[id="radio-2"]:checked ~ .glider {
+  transform: translateX(101%);
+}
+
+.glider {
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  position: absolute;
+  height: 40px;
+  width: 180px;
+  background: linear-gradient(180deg, #5561ff 0%, #3643fc 100%, #3643fc 100%);
+  z-index: 1;
+  border-radius: 12px;
+  transition: 0.25s ease-out;
+}
+
+.tabs--with-icon .tab,
+.tabs--with-icon .glider {
+  width: 120px;
+}
+
+input[id="radio-i1"]:checked ~ .glider {
+  transform: translateX(0);
+}
+
+input[id="radio-i2"]:checked ~ .glider {
+  transform: translateX(101%);
+}
+input[id="radio-i3"]:checked ~ .glider {
+  transform: translateX(201%);
+}
+
+.tabs--t4 .tab,
+.tabs--t4 .glider {
+  width: 85px;
+}
+
+input[id="radio-t4-1"]:checked ~ .glider {
+  transform: translateX(0);
+}
+
+input[id="radio-t4-2"]:checked ~ .glider {
+  transform: translateX(101%);
+}
+input[id="radio-t4-3"]:checked ~ .glider {
+  transform: translateX(201%);
+}
+input[id="radio-t4-4"]:checked ~ .glider {
+  transform: translateX(301%);
+}
+
+.tabs--t5 .tab,
+.tabs--t5 .glider {
+  width: 70px;
+}
+
+input[id="radio-t5-1"]:checked ~ .glider {
+  transform: translateX(0);
+}
+
+input[id="radio-t5-2"]:checked ~ .glider {
+  transform: translateX(101%);
+}
+input[id="radio-t5-3"]:checked ~ .glider {
+  transform: translateX(201%);
+}
+input[id="radio-t5-4"]:checked ~ .glider {
+  transform: translateX(301%);
+}
+input[id="radio-t5-5"]:checked ~ .glider {
+  transform: translateX(401%);
+}
+
+.tabs--t6 .tab,
+.tabs--t6 .glider {
+  width: 60px;
+}
+
+input[id="radio-t6-1"]:checked ~ .glider {
+  transform: translateX(0);
+}
+
+input[id="radio-t6-2"]:checked ~ .glider {
+  transform: translateX(101%);
+}
+input[id="radio-t6-3"]:checked ~ .glider {
+  transform: translateX(201%);
+}
+input[id="radio-t6-4"]:checked ~ .glider {
+  transform: translateX(301%);
+}
+input[id="radio-t6-5"]:checked ~ .glider {
+  transform: translateX(401%);
+}
+input[id="radio-t6-6"]:checked ~ .glider {
+  transform: translateX(501%);
+}
+
+.tabs--icon-only .tab,
+.tabs--icon-only .glider {
+  width: 40px;
+}
+
+input[id="radio-io1"]:checked ~ .glider {
+  transform: translateX(0);
+}
+
+input[id="radio-io2"]:checked ~ .glider {
+  transform: translateX(101%);
+}
+input[id="radio-io3"]:checked ~ .glider {
+  transform: translateX(201%);
+}
+input[id="radio-io4"]:checked ~ .glider {
+  transform: translateX(301%);
+}
+.icon--tabs{margin-left: 8px;}
+.tab--1{
+  padding-left: 5px;
+}
+.tab{
+  padding-left: 3px;
+}
+.last--i{padding-right: 13px;}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-direction: row;
+    font-size: 14px;
+  }
+  .tab {
+    height: 48px;
+    width: 396px;
+  }
+  .tabs{
+    padding-right: 1px;
+  }
+  .glider {
+    height: 40px;
+    width: 396px;
       
-    <script src="js/main.js"></script>
-</body>
-</html>
+  }
+  .tabs--with-icon .tab,
+.tabs--with-icon .glider {
+  width: 260px;
+}
+.tabs--t4 .tab,
+.tabs--t4 .glider {
+  width: 196px;
+}
+
+.tabs--t5 .tab,
+.tabs--t5 .glider {
+  width: 156px;
+}
+.tabs--t6 .tab,
+.tabs--t6 .glider {
+  width: 128px;
+}
+.tabs--icon-only .tab,
+.tabs--icon-only .glider {
+  width: 60px;
+}
+}
